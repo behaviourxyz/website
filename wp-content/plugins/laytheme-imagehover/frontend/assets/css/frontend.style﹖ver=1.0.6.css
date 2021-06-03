@@ -1,0 +1,20 @@
+.lay-imagehover-region {
+  opacity: 0;
+  position: relative;
+  z-index: 0; }
+  .lay-imagehover-region img {
+    opacity: 0 !important;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0; }
+  .lay-imagehover-region img.show {
+    opacity: 1 !important; }
+
+.lay-imagehover-region.transition {
+  -webkit-transition: opacity 200ms ease;
+  -o-transition: opacity 200ms ease;
+  transition: opacity 200ms ease; }
+
+.lay-imagehover-region.show {
+  opacity: 1; }
