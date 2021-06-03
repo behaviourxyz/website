@@ -43,7 +43,8 @@ a {
 */
 .lay-textformat-parent a, a.projectlink .lay-textformat-parent > *, .lay-carousel-sink .single-caption-inner a {
   display: inline;
-  border-bottom-style: solid; }
+  border-bottom-style: solid;
+  border-bottom-color: #FF4500; }
 
 .scrolltotop {
   cursor: pointer; }
