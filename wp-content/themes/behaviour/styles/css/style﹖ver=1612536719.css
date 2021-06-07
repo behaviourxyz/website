@@ -764,12 +764,6 @@ textarea:focus, input:focus, select:focus {
 @media only screen and (max-width: 480px) {
   h1 {
     font-size: 16.9082125604vw;
-    hyphens: auto;
-    -o-hyphens: auto;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    word-break: break-word;
   }
   h2 {
     font-size: 11.1111111111vw;
