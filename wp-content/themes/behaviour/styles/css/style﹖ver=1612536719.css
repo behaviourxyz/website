@@ -2135,6 +2135,7 @@ body.page-template-page-home .dummy-header, body.page-template-page-home_alt .du
 }
 .page-wrap#studio .awards-section .award-item {
   position: relative;
+  text-align: justify;	
   display: block;
   cursor: pointer;
   cursor: url("../../assets/cursors/cursor-bordered.png.html") 17 17, pointer;
