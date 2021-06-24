@@ -1,381 +1,307 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<!doctype html>
+<html data-n-head="" data-n-head-ssr>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta data-n-head="true" charset="utf-8">
+<meta data-n-head="true" content="width=device-width,initial-scale=1" name="viewport">
+<meta data-n-head="true" content="BEHAVIOUR®" property="og:title">
+<meta data-n-head="true" content="website" property="og:type">
+<meta data-n-head="true" content="https://www.behaviour.xyz" property="og:url">
+<meta data-n-head="true" content="BEHAVIOUR® is a creative company based in London and San Francisco" name="description">
+<meta data-n-head="true" content="BEHAVIOUR® is a creative company based in London and San Francisco" property="og:description">
+<title data-n-head="true">BEHAVIOUR&reg; &ndash; a creative company based in London &amp; San Francisco</title>
+<link href="images/favicon.png" rel="shortcut icon" data-n-head="true">
+<link href="fonts/fonts.css" rel="stylesheet" data-n-head="true">
+<style data-vue-ssr-id="db40e098:0">
+/* Darkmode
+   ========================================================================== */
 
-<!--START FAVICONS-->
-<link rel="apple-touch-icon" sizes="180x180" href="wp-content/themes/behaviour/assets/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="wp-content/themes/behaviour/assets/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="wp-content/themes/behaviour/assets/favicons/favicon-16x16.png">
-<link rel="manifest" href="wp-content/themes/behaviour/assets/favicons/site.webmanifest.txt">
-<meta name="msapplication-TileColor" content="#000000">
-<meta name="theme-color" content="#ffffff">
-<!--END FAVICONS-->
+/**
+ * add light and dark mode support .
+ */
 
-<link rel="alternate" type="application/rss+xml" title="behaviour RSS Feed" href="feed/index.rss" />
-<link rel="pingback" href="index.html" />
-<meta name="viewport" content="width=device-width, user-scalable=no">
-<script type="text/javascript">
-if( navigator.userAgent.match(/iPad/i) != null ){
-	viewport = document.querySelector("meta[name=viewport]");
-	viewport.setAttribute('content', 'width=device-width, user-scalable=0');
+@media (prefers-color-scheme: dark) {
+body {
+    background-color: black;
+    color: white;
 }
-</script>
-<link rel="stylesheet" href="wp-content/themes/behaviour/style.css">
-<title>BEHAVIOUR&reg; &ndash; A CREATIVE COMPANY</title>
-<meta name="description" content="BEHAVIOUR® IS A CREATIVE COMPANY THAT BALANCES PURPOSE AND PROFIT." />
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-<link rel="canonical" href="index.html" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="BEHAVIOUR&reg; &ndash; A CREATIVE COMPANY " />
-<meta property="og:description" content="BEHAVIOUR® IS A CREATIVE COMPANY THAT BALANCES PURPOSE AND PROFIT." />
-<meta property="og:url" content="https://behaviour.xyz/" />
-<meta property="og:site_name" content="behaviour" />
-<meta property="article:modified_time" content="2021-02-18T11:12:18+00:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<link rel="dns-prefetch" href="https://s.w.org" />
-<link rel="stylesheet" id="wp-block-library-css"  href="wp-includes/css/dist/block-library/style.min%EF%B9%96ver=5.6.css" type="text/css" media="all" />
-<link rel="stylesheet" id="style-style-css"  href="wp-content/themes/behaviour/styles/css/style%EF%B9%96ver=1612536719.css" type="text/css" media="all" />
-<link rel="https://api.w.org/" href="wp-json/index.json" />
-<link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/6.json" />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php%EF%B9%96rsd.html" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
-<meta name="generator" content="WordPress 5.6" />
-<link rel="shortlink" href="index.html" />
+a {
+    color: #fff
+}
+}
+
+@media (prefers-color-scheme: light) {
+body {
+    background-color: white;
+    color: black;
+}
+a {
+    color: #000
+}
+}
+body {
+    margin: 0;
+    font-family: "Favorit Mono";
+    font-size: 12px;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased!important;
+    text-rendering: optimizeLegibility!important
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300
+}
+:focus {
+    outline: 0
+}
+::-webkit-scrollbar {
+display:none
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+.row>* {
+    margin: 0 20px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+.row>:first-child {
+    margin-left: 0
+}
+.row>:last-child {
+    margin-right: 0
+}
+.content p {
+    margin: 20px 0
+}
+button {
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    display: block;
+    padding: 0
+}
+
+@media only screen and (max-width:750px) {
+body {
+    font-size: 11px
+}
+.row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+.row>* {
+    margin-right: 0;
+    margin-left: 0
+}
+}
+</style>
+<style data-vue-ssr-id="1283e134:0">
+.container {
+    position: relative
+}
+.container #description {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0
+}
+</style>
+<style data-vue-ssr-id="3fd05a5c:0">
+@charset "UTF-8";
+.view-home {
+    text-transform: uppercase;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 30px 100px;
+    min-height: 100vh;
+    margin: auto
+}
+.view-home .lists {
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+.view-home .lists .prismic-content, .view-home .lists .prismic-content ul {
+    display: inline
+}
+.view-home .lists ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none
+}
+.view-home .lists li {
+    display: inline-block;
+    margin-right: 10px
+}
+.view-home .lists li::after {
+    content: ","
+}
+.view-home .lists li.title::after, .view-home .lists li:last-child::after {
+    display: none
+}
+.view-home .lists .title h3::before {
+    content: "\21B3";
+    margin-right: 10px
+}
+.view-home .lists h3 {
+    display: inline-block;
+    font-size: 12px;
+    margin: 0
+}
+
+@media only screen and (max-width:750px) {
+.view-home {
+    padding-right: 25px;
+    padding-left: 25px
+}
+.view-home .lists h3 {
+    font-size: 11px
+}
+}
+</style>
+<style data-vue-ssr-id="1cc19aa6:0">
+@charset "UTF-8";
+footer {
+    text-transform: uppercase;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 30px
+}
+footer .col-1 li, footer .col-1 p, footer .col-1 ul {
+    display: inline;
+    margin: 0
+}
+footer .col-1 ul {
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 0
+}
+footer .col-1 li {
+    margin-left: 10px
+}
+footer .col-1 li::after {
+    content: ','
+}
+footer .col-1 li:last-child::after {
+    content: ''
+}
+footer .col-1 ul::before {
+    content: '\21B3'
+}
+footer .col-2 p {
+    margin: 0
+}
+
+@media only screen and (max-width:750px) {
+footer {
+    padding: 25px
+}
+footer .contact {
+    margin-left: 0
+}
+footer .col-2 {
+    margin-top: 20px
+}
+}
+</style>
 </head>
-
-<body id="home" class="home page-template page-template-page-home page-template-page-home-php page page-id-6">
-<div class="menu-header-wrap"> 
-  
-  <!--START MAIN MENU CONTENT-->
-  
-  <div class="main-menu-wrap">
-    <ul id="menu-main-menu" class="menu">
-      <li id="menu-item-337" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item menu-item-337"><span class="menu-link"><a href="index.html" aria-current="page">Index</a></span></li>
-      <li id="menu-item-338" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-338"><span class="menu-link"><a href="purpose/">Purpose</a></span></li>
-      <li id="menu-item-339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-339"><span class="menu-link"><a href="index.html">Future</a></span></li>
-      <li id="menu-item-340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-340"><span class="menu-link"><a href="forever/">Forever&reg;</a></span></li>
-    </ul>
-  </div>
-  
-  <!--END MAIN MENU CONTENT--> 
-  
-  <!--START HEADER CONTENT-->
-  
-  <div class="header-wrap">
-    <div class="outer-content-wrap"> 
-      
-      <!--Start Site Title-->
-      <div class="site-title">
-        <h5 class="desktop"><a href="/">B&reg;</a></h5>
-        <h5 class="mobile"><a href="/">B&reg;</a></h5>
-        <h5 id="time"></h5>
-      </div>
-      <!--End Site Title--> 
-      
-      <!--Start Menu Icon-->
-      <div class="menu-icon"> <img class="plus" src="wp-content/themes/behaviour/assets/svgs/plus-icon.svg" /> <img class="down-arrow" src="wp-content/themes/behaviour/assets/svgs/down-arrow.svg" /> </div>
-      <!--End Menu Icon--> 
-      
-    </div>
-  </div>
-  
-  <!--END HEADER CONTENT--> 
-  
-</div>
-
-<!--Start Dummy Header-->
-<div class="dummy-header"></div>
-<!--End Dummy Header--> 
-
-<!--Start Content Wrapper-->
-<div id="outer-content">
-  <div id="content">
-    <div class="content-wrapper"> 
-      <!--Start Content Wrapper-->
-      
-      <div id="page-classes" data-id="home"></div>
-      <!--START HOME PAGE CONTENT-->
-      
-      <div id="home" class="page-wrap grid"> 
-        
-        <!--START PAGE INTRO-->
-        <div class="page-intro">
-          <div class="outer-content-wrap"> 
-            
-            <!--Start Intro Statement-->
-            <div class="intro-copy">
-              <h3><span style="font-weight: 400;">BEHAVIOUR&reg; is a creative company that balances purpose and profit. Based in London and San Francisco.</span></h3>
-            </div>
-            <!--End Intro Statement--> 
-            
-            <!--Start Further Info-->
-            <div class="read-more-section-wrap"> 
-              
-              <!--Start Read More Text Content-->
-              <div class="read-more-text-content">
-                <div class="inner-wrap">
-                  <p><span style="font-weight: 400;">We are a CREATIVE company INNOVATING for the good of PEOPLE and the PLANET.</span></p>
-                  <p><span style="font-weight: 400;">We build BRANDS, design PRODUCTS and create customer EXPERIENCES. We help startups ESTABLISH, survive and thrive. We partner with existing brands and help them innovate, GROW and understand the IMPACT they can have on the world.</span></p>
-                  <p><span style="font-weight: 400;">We believe IDEAS can create radical CHANGE within a world running out of resources and time. CREATIVITY can shift perceptions, and brands with purpose can TRANSFORM our relationship to each other and the world, shifting our feelings about consumption and waste.</span></p>
-                  <p><span style="font-weight: 400;">Doing BETTER with less, making things with beauty and function, creating VALUE from transparency and provenance. The FUTURE is more uncertain now than ever. Our duty is to inform, INSPIRE and innovate.</span></p>
-                </div>
-              </div>
-              <!--End Read More Text Content--> 
-              
-              <!--Start Read More Opener-->
-              <div class="read-more-opener">
-                <p><strong class="read-text">MORE</strong></p>
-              </div>
-              <!--End Read More Opener--> 
-              
-            </div>
-            <!--End Further Info--> 
-            
-          </div>
-        </div>
-        <!--END PAGE INTRO--> 
-        
-        <!--START PAGE CONTENT-->
-        <div class="page-content"> 
-          
-          <!--Start Lead Video-->
-          
-          <div class="lead-video-wrap video-wrap manual-play video-paused">
-            <video class="b-lazy" data-src="wp-content/uploads/hero/Hero-Homepage-B-SoundOn.mp4" poster="wp-content/uploads/hero/Hero-Hompage-Holder-2200x1150.jpg" preload="auto" loop playsinline></video>
-            <div class="video-placeholder lazy" style="background-image:url();" data-original="wp-content/uploads/hero/Hero-Hompage-Holder-2200x1150.jpg">
-              <div class="loading-overlay black"></div>
-            </div>
-            
-            <!--Start Play Pause Text--> 
-            <span class="play-pause-text">PLAY</span> 
-            <!--End Play Pause Text--> 
-            
-          </div>
-          
-          <!--End Lead Video--> 
-          
-          <!--Start Content Sections--> 
-          
-          <!--Work Section-->
-          
-          <div class="work-section">
-            <div class="outer-content-wrap"> 
-              
-              <!--Start Intro Statement-->
-              <div class="signup-scroller-wrap marquee"  data-direction="left" data-duration="15000" data-delayBeforeStart="0" data-gap="0" data-duplicated="true" data-startVisible="true">
-                <h3><span style="font-weight: 400;">LATEST&nbsp;&nbsp;</span><span style="font-weight: 400;">LATEST&nbsp;&nbsp;</span><span style="font-weight: 400;">LATEST&nbsp;&nbsp;</span><span style="font-weight: 400;">LATEST&nbsp;&nbsp;</span><span style="font-weight: 400;">LATEST&nbsp;&nbsp;</span><span style="font-weight: 400;">LATEST&nbsp;&nbsp;</span><span style="font-weight: 400;">LATEST&nbsp;&nbsp;</span></h3>
-                <br>
-              </div>
-              <!--End Intro Statement--> 
-              
-              <a class="work-thumbnail large col-12-12_lg col-2-2_sm video" href="news/behaviour-now-open-in-san-francisco/"> 
-              
-              <!--Start Thumbnail-->
-              <div class="thumbnail">
-                <div class="video-wrap">
-                  <video class="b-lazy" data-src="wp-content/uploads/hero/Hero-Homepage-News.mp4" poster="wp-content/uploads/hero/Homepage-Animation_Slower_PreLoad_FIN.jpg" preload="auto" loop playsinline muted autoplay></video>
-                  <div class="video-placeholder lazy" style="background-image:url();" data-original="wp-content/uploads/hero/Homepage-Animation_Slower_PreLoad_FIN.jpg">
-                    <div class="loading-overlay black"></div>
-                  </div>
-                </div>
-              </div>
-              <!--End Thumbnail--> 
-              
-              <!--Start Titles-->
-              <div class="titles">
-                <h4>NEWS<span class="arrow">BEHAVIOUR&reg; USA — NOW OPEN IN SAN FRANCISCO</span></h4>
-              </div>
-              <!--End Titles--> 
-              
-              </a> <a class="work-thumbnail large col-12-12_lg col-2-2_sm video" href="collaborations/clara-foods/"> 
-              
-              <!--Start Thumbnail-->
-              <div class="thumbnail">
-                <div class="video-wrap">
-                  <video class="b-lazy" data-src="wp-content/uploads/hero/Hero-Homepage-Partnership.mp4" poster="wp-content/uploads/hero/Homepage-Animation_Slower_PreLoad_FIN.jpg" preload="auto" loop playsinline muted autoplay></video>
-                  <div class="video-placeholder lazy" style="background-image:url();" data-original="wp-content/uploads/hero/Homepage-Animation_Slower_PreLoad_FIN.jpg">
-                    <div class="loading-overlay black"></div>
-                  </div>
-                </div>
-              </div>
-              <!--End Thumbnail--> 
-              
-              <!--Start Titles-->
-              <div class="titles">
-                <h4>X CLARA FOODS<span class="arrow">CREATING VITAL INGREDIENTS FOR THE WORLD</span></h4>
-              </div>
-              <!--End Titles--> 
-              
-              </a> <a class="work-thumbnail large col-12-12_lg col-2-2_sm video" href="collaborations/samsung/"> 
-              
-              <!--Start Thumbnail-->
-              <div class="thumbnail">
-                <div class="video-wrap">
-                  <video class="b-lazy" data-src="wp-content/uploads/hero/Hero-Homepage-Partnership.mp4" poster="wp-content/uploads/hero/Homepage-Animation_Slower_PreLoad_FIN.jpg" preload="auto" loop playsinline muted autoplay></video>
-                  <div class="video-placeholder lazy" style="background-image:url();" data-original="wp-content/uploads/hero/Homepage-Animation_Slower_PreLoad_FIN.jpg">
-                    <div class="loading-overlay black"></div>
-                  </div>
-                </div>
-              </div>
-              <!--End Thumbnail--> 
-              
-              <!--Start Titles-->
-              <div class="titles">
-                <h4>X SAMSUNG<span class="arrow">PIONEERING IDEAS FOR POSITIVE IMPACT</span></h4>
-              </div>
-              <!--End Titles--> 
-              
-              </a> <a class="work-thumbnail large col-12-12_lg col-2-2_sm video" href="collaborations/slash-objects/"> 
-              
-              <!--Start Thumbnail-->
-              <div class="thumbnail">
-                <div class="video-wrap">
-                  <video class="b-lazy" data-src="wp-content/uploads/hero/Hero-Homepage-Partnership.mp4" poster="wp-content/uploads/hero/Homepage-Animation_Slower_PreLoad_FIN.jpg" preload="auto" loop playsinline muted autoplay></video>
-                  <div class="video-placeholder lazy" style="background-image:url();" data-original="wp-content/uploads/hero/Homepage-Animation_Slower_PreLoad_FIN.jpg">
-                    <div class="loading-overlay black"></div>
-                  </div>
-                </div>
-              </div>
-              <!--End Thumbnail--> 
-              
-              <!--Start Titles-->
-              <div class="titles">
-                <h4>X SLASH OBJECTS<span class="arrow">REFRAMING PRODUCT DESIGN IN A MATERIAL WORLD</span></h4>
-              </div>
-              <!--End Titles--> 
-              
-              </a> </div>
-          </div>
-          <!--Forever Section--> 
-          
-          <a class="ideas-section" href="forever/"> 
-          
-          <!--Start Inner Scroller-->
-          <div class="inner-scroller">
-            <div class="ideas-items-wrap">
-              <div class="ideas-item large">
-                <video class="b-lazy" data-src="wp-content/uploads/forever/Hero-People-Planet-Sq.mp4" poster="wp-content/uploads/hero/placeholder-black.jpg" preload="auto" loop playsinline muted autoplay></video>
-                <div class="video-placeholder lazy" style="background-image:url();" data-original="wp-content/uploads/hero/placeholder-black.jpg">
-                  <div class="loading-overlay black"></div>
-                </div>
-              </div>
-              <div class="ideas-item large lazy" style="background-image:url(wp-content/uploads/forever/forever-AAL-1350x1350.jpg); " data-original="wp-content/uploads/forever/forever-AAL-1350x1350.jpg"></div>
-              <div class="ideas-item large">
-                <video class="b-lazy" data-src="wp-content/uploads/forever/Hero-Purpose-Profit-Sq.mp4" poster="wp-content/uploads/hero/placeholder-black.jpg" preload="auto" loop playsinline muted autoplay></video>
-                <div class="video-placeholder lazy" style="background-image:url();" data-original="wp-content/uploads/hero/placeholder-black.jpg">
-                  <div class="loading-overlay black"></div>
-                </div>
-              </div>
-              <div class="ideas-item large lazy" style="background-image:url(wp-content/uploads/forever/forever_STL-1350x1350.jpg); " data-original="wp-content/uploads/forever/forever_STL-1350x1350.jpg"></div>
-              <div class="ideas-item large">
-                <video class="b-lazy" data-src="wp-content/uploads/forever/Hero-Impact-Change-Sq.mp4" poster="wp-content/uploads/hero/placeholder-black.jpg" preload="auto" loop playsinline muted autoplay></video>
-                <div class="video-placeholder lazy" style="background-image:url();" data-original="wp-content/uploads/hero/placeholder-black.jpg">
-                  <div class="loading-overlay black"></div>
-                </div>
-              </div>
+<body data-n-head="">
+<div id="__nuxt" data-server-rendered="true">
+  <div id="__layout">
+    <div class="container"><!---->
+      <main class="view-home">
+        <div class="row">
+          <div class="content">
+            <div class="prismic-content">
+              <p>BEHAVIOUR&reg; is a creative company based in London and San Francisco, innovating for the good of people and the planet.</p>
+              <p>We believe ideas can create radical change within a world running out of resources and time. Creativity can shift perceptions, and brands with purpose can transform our relationship to each other and the world, shifting our feelings about consumption and waste.</p>
+              <p> Doing better with less, making things with beauty and function, creating value from transparency and provenance. The future is more uncertain now than ever. Our duty is to inform, inspire and innovate.</p>
             </div>
           </div>
-          <!--End Inner Scroller--> 
-          
-          <!--Start Title Overlay-->
-          <div class="title-overlay large-text-section">
-            <div class="outer-content-wrap"> <span class="full-width-text" style="mix-blend-mode: difference"> FOREVER&reg; </span> </div>
+          <div class="lists">
+            <ul>
+              <li class="title">
+                <div class="prismic-content">
+                  <h3>Think</h3>
+                </div>
+                <span class="colon">:</span></li>
+              <div class="prismic-content">
+                <ul>
+                  <li>Research + Insights</li>
+                  <li>Business Strategy</li>
+                  <li>Brand Strategy</li>
+                  <li>Purpose</li>
+                  <li>Positioning</li>
+                  <li>Personality</li>
+                  <li>Category Definition</li>
+                  <li>Naming + Nomenclature</li>
+                  <li>Tagline Development</li>
+                  <li>Brand Narrative.</li>
+                </ul>
+              </div>
+            </ul>
+            <br>
+            <ul>
+              <li class="title">
+                <div class="prismic-content">
+                  <h3>Make</h3>
+                </div>
+                <span class="colon">:</span></li>
+              <div class="prismic-content">
+                <ul>
+                  <li>Visual Identity</li>
+                  <li>Tone of Voice</li>
+                  <li>Image Direction</li>
+                  <li>Brand Systems</li>
+                  <li>Motion Design</li>
+                  <li>Campaign + Content</li>
+                  <li>Product Design</li>
+                  <li>Packaging Systems</li>
+                  <li>UX + UI</li>
+                  <li>Web + App Design.</li>
+                </ul>
+              </div>
+            </ul>
           </div>
-          <!--End Title Overlay-->
-          
-          <div class="scroller-overlay">
-            <div class="inner-wrap"></div>
+        </div>
+      </main>
+      <footer class="row">
+        <div class="col col-1">
+          <div class="prismic-content">
+            <p>
+            <ul>
+              <li><a href="mailto:info@behaviour.xyz">info@behaviour.xyz</a></li>
+              <li><a target="_blank" rel="noopener" href="https://www.instagram.com/behaviour.xyz/">@behaviour.xyz</a></li>
+            </ul>
+            <br>
+            <ul>
+              <li class="js-clock"><span>LONDON</span> <span class="js-clock-ldn">00:00:00</span></li>
+              <li class="js-clock"><span>SAN FRANCISCO</span> <span class="js-clock-sf">00:00:00</span></li>
+            </ul>
+            </p>
           </div>
-          </a> 
-          
-          <!--End Content Sections-->
-          
-          <div style="position: relative; display: block; height: 1px;"></div>
         </div>
-        <!--END PAGE CONTENT--> 
-        
-      </div>
-      
-      <!--END HOME PAGE CONTENT--> 
-      
-      <script type="text/javascript" src="wp-includes/js/dist/vendor/moment.min%EF%B9%96ver=2.26.0.js" id="moment-js"></script> 
-      <script type="text/javascript" id="moment-js-after">
-moment.updateLocale( 'en_US', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":1},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"F j, Y g:i a","LLLL":null}} );
-</script> 
-      
-      <!--START FOOTER CONTENT-->
-      
-      <div class="footer-wrap grid"> 
-        
-        <!--Start Contact Text-->
-        <div class="contact-text-wrap">
-          <div class="outer-content-wrap">
-            <h5>Are you are looking to make a meaningful impact on the world?</h5>
-            <a href="mailto:curious@behaviour.xyz">LET’S TALK</a> </div>
+        <div class="col col-2">
+          <div class="prismic-content">
+            <p>Are you are looking to make a meaningful impact on the world? <a href="mailto:curious@behaviour.xyz">Let's talk</a></p>
+          </div>
         </div>
-        <!--End Contact Text--> 
-        
-        <!--Start Footer Menu Wrap-->
-        <div class="footer-menu-wrap">
-          <ul id="menu-footer-menu" class="menu">
-            <li id="menu-item-213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-213">
-              <h5>&nbsp;</h5>
-            </li>
-            <li id="menu-item-214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214">
-              <h5>&nbsp;</h5>
-            </li>
-            <li id="menu-item-215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-215">
-              <h5>London</h5>
-            </li>
-            <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216">
-              <h5>San Francisco</h5>
-            </li>
-            <li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217">
-              <h5>+44 (0)20 8106-1805</h5>
-            </li>
-            <li id="menu-item-218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-218">
-              <h5>+1 (628) 946-1863</h5>
-            </li>
-            <li id="menu-item-219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-219">
-              <h5>&nbsp;</h5>
-            </li>
-            <li id="menu-item-220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-220">
-              <h5><a href="https://www.linkedin.com/company/behaviour.xyz/">LinkedIn</a></h5>
-            </li>
-            <li id="menu-item-221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221">
-              <h5><a href="https://www.instagram.com/behaviour.xyz/">Instagram</a></h5>
-            </li>
-            <li id="menu-item-222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-222">
-              <h5><a href="https://xyz.us6.list-manage.com/subscribe/post?u=9fa89861f3899aad145e58844&id=732e0a6cdc">Sign-up</a></h5>
-            </li>
-            <li id="menu-item-223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223">
-              <h5>&nbsp;</h5>
-            </li>
-            <li id="menu-item-224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-224">
-              <h5><a href="terms-of-use/">Terms of use</a></h5>
-            </li>
-            <li id="menu-item-225" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-225">
-              <h5><a href="privacy-policy/">Privacy Policy</a></h5>
-            </li>
-            <li id="menu-item-226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-226">
-              <h5>&copy;2021 BEHAVIOUR&reg;</h5>
-            </li>
-          </ul>
-        </div>
-        <!--End Footer Menu Wrap--> 
-        
-      </div>
-      
-      <!--END FOOTER CONTENT--> 
-      
-      <!-- End Content Wrap --> 
+      </footer>
     </div>
   </div>
 </div>
-<!-- End Content Wrap --> 
-
-<script defer src="wp-content/cache/autoptimize/js/autoptimize_e13a7bf442301c6d0ac783402311e1b8.js"></script>
+<script src="main.af706cd42808cf38cd3a.js"></script>
 </body>
 </html>
