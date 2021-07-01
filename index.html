@@ -1,307 +1,116 @@
-<!doctype html>
-<html data-n-head="" data-n-head-ssr>
+<!DOCTYPE html5>
+<html>
 <head>
-<meta data-n-head="true" charset="utf-8">
-<meta data-n-head="true" content="width=device-width,initial-scale=1" name="viewport">
+<meta charset="UTF-8"/>
 <meta data-n-head="true" content="BEHAVIOUR®" property="og:title">
 <meta data-n-head="true" content="website" property="og:type">
 <meta data-n-head="true" content="https://www.behaviour.xyz" property="og:url">
 <meta data-n-head="true" content="BEHAVIOUR® is a creative company based in London and San Francisco" name="description">
 <meta data-n-head="true" content="BEHAVIOUR® is a creative company based in London and San Francisco" property="og:description">
-<title data-n-head="true">BEHAVIOUR&reg; &ndash; a creative company based in London &amp; San Francisco</title>
-<link href="images/favicon.png" rel="shortcut icon" data-n-head="true">
-<link href="fonts/fonts.css" rel="stylesheet" data-n-head="true">
-<style data-vue-ssr-id="db40e098:0">
-/* Darkmode
-   ========================================================================== */
-
-/**
- * add light and dark mode support .
- */
-
-@media (prefers-color-scheme: dark) {
-body {
-    background-color: black;
-    color: white;
-}
-a {
-    color: #fff
-}
-}
-
-@media (prefers-color-scheme: light) {
-body {
-    background-color: white;
-    color: black;
-}
-a {
-    color: #000
-}
-}
-body {
-    margin: 0;
-    font-family: "Favorit Mono";
-    font-size: 12px;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased!important;
-    text-rendering: optimizeLegibility!important
-}
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300
-}
-:focus {
-    outline: 0
-}
-::-webkit-scrollbar {
-display:none
-}
-.row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-.row>* {
-    margin: 0 20px;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1
-}
-.row>:first-child {
-    margin-left: 0
-}
-.row>:last-child {
-    margin-right: 0
-}
-.content p {
-    margin: 20px 0
-}
-button {
-    background-color: transparent;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 0;
-    cursor: pointer;
-    outline: 0;
-    border: none;
-    display: block;
-    padding: 0
-}
-
-@media only screen and (max-width:750px) {
-body {
-    font-size: 11px
-}
-.row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column
-}
-.row>* {
-    margin-right: 0;
-    margin-left: 0
-}
-}
-</style>
-<style data-vue-ssr-id="1283e134:0">
-.container {
-    position: relative
-}
-.container #description {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0
-}
-</style>
-<style data-vue-ssr-id="3fd05a5c:0">
-@charset "UTF-8";
-.view-home {
-    text-transform: uppercase;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 10px 30px 100px;
-    min-height: 100vh;
-    margin: auto
-}
-.view-home .lists {
-    margin-bottom: 20px;
-    margin-top: 20px
-}
-.view-home .lists .prismic-content, .view-home .lists .prismic-content ul {
-    display: inline
-}
-.view-home .lists ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none
-}
-.view-home .lists li {
-    display: inline-block;
-    margin-right: 10px
-}
-.view-home .lists li::after {
-    content: ","
-}
-.view-home .lists li.title::after, .view-home .lists li:last-child::after {
-    display: none
-}
-.view-home .lists .title h3::before {
-    content: "\21B3";
-    margin-right: 10px
-}
-.view-home .lists h3 {
-    display: inline-block;
-    font-size: 12px;
-    margin: 0
-}
-
-@media only screen and (max-width:750px) {
-.view-home {
-    padding-right: 25px;
-    padding-left: 25px
-}
-.view-home .lists h3 {
-    font-size: 11px
-}
-}
-</style>
-<style data-vue-ssr-id="1cc19aa6:0">
-@charset "UTF-8";
-footer {
-    text-transform: uppercase;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    position: absolute;
-    margin: auto;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding: 30px
-}
-footer .col-1 li, footer .col-1 p, footer .col-1 ul {
-    display: inline;
-    margin: 0
-}
-footer .col-1 ul {
-    list-style-type: none;
-    margin-left: 10px;
-    padding: 0
-}
-footer .col-1 li {
-    margin-left: 10px
-}
-footer .col-1 li::after {
-    content: ','
-}
-footer .col-1 li:last-child::after {
-    content: ''
-}
-footer .col-1 ul::before {
-    content: '\21B3'
-}
-footer .col-2 p {
-    margin: 0
-}
-
-@media only screen and (max-width:750px) {
-footer {
-    padding: 25px
-}
-footer .contact {
-    margin-left: 0
-}
-footer .col-2 {
-    margin-top: 20px
-}
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png"/>
+<link rel="manifest" href="assets/img/favicon/site.webmanifest.txt"/>
+<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#000"/>
+<meta name="msapplication-TileColor" content="#FFF"/>
+<meta name="theme-color" content="#FFF"/>
+<title data-n-head="true">BEHAVIOUR&reg; a creative company based in London &amp; San Francisco</title>
+<link rel="stylesheet" href="assets/css/tachyons.css"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.3.7/plyr.css"/>
+<link rel="stylesheet" href="https://use.typekit.net/uhy4clp.css">
 </head>
-<body data-n-head="">
-<div id="__nuxt" data-server-rendered="true">
-  <div id="__layout">
-    <div class="container"><!---->
-      <main class="view-home">
-        <div class="row">
-          <div class="content">
-            <div class="prismic-content">
-              <p>BEHAVIOUR&reg; is a creative company based in London and San Francisco, innovating for the good of people and the planet.</p>
-              <p>We believe ideas can create radical change within a world running out of resources and time. Creativity can shift perceptions, and brands with purpose can transform our relationship to each other and the world, shifting our feelings about consumption and waste.</p>
-              <p> Doing better with less, making things with beauty and function, creating value from transparency and provenance. The future is more uncertain now than ever. Our duty is to inform, inspire and innovate.</p>
-            </div>
-          </div>
-          <div class="lists">
-            <ul>
-              <li class="title">
-                <div class="prismic-content">
-                  <h3>Think</h3>
-                </div>
-                <span class="colon">:</span></li>
-              <div class="prismic-content">
-                <ul>
-                  <li>Research + Insights</li>
-                  <li>Business Strategy</li>
-                  <li>Brand Strategy</li>
-                  <li>Purpose</li>
-                  <li>Positioning</li>
-                  <li>Personality</li>
-                  <li>Category Definition</li>
-                  <li>Naming + Nomenclature</li>
-                  <li>Tagline Development</li>
-                  <li>Brand Narrative.</li>
-                </ul>
-              </div>
-            </ul>
-            <br>
-            <ul>
-              <li class="title">
-                <div class="prismic-content">
-                  <h3>Make</h3>
-                </div>
-                <span class="colon">:</span></li>
-              <div class="prismic-content">
-                <ul>
-                  <li>Visual Identity</li>
-                  <li>Tone of Voice</li>
-                  <li>Image Direction</li>
-                  <li>Brand Systems</li>
-                  <li>Motion Design</li>
-                  <li>Campaign + Content</li>
-                  <li>Product Design</li>
-                  <li>Packaging Systems</li>
-                  <li>UX + UI</li>
-                  <li>Web + App Design.</li>
-                </ul>
-              </div>
-            </ul>
-          </div>
+<body>
+<!--include partials/ia-go/media-checker.pug-->
+<div class="loader"></div>
+<div class="wrapper" style="display:none">
+  <header>
+    <h1 class="name">B&reg;</h1>
+    <h4 class="info"> <a class="info--link">Info</a></h4>
+  </header>
+  <div class="cursor"></div>
+  <main>
+    <ul id="projects">
+      <li class="project no-animated" style="opacity:0"><a class="project__link no-loaded relative" id="project__0">BEHAVIOUR&reg; is a creative company based in London and San Francisco, innovating for the good of people and the planet.<span class="progress">BEHAVIOUR&reg; is a creative company based in London and San Francisco, innovating for the good of people and the planet.</span>
+        <div class="project__loader bg-black z-999 fixed-center is-hidden overflow-hidden">
+          <div class="project__loader__bar"> </div>
         </div>
-      </main>
-      <footer class="row">
-        <div class="col col-1">
-          <div class="prismic-content">
-            <p>
-            <ul>
-              <li><a href="mailto:info@behaviour.xyz">info@behaviour.xyz</a></li>
-              <li><a target="_blank" rel="noopener" href="https://www.instagram.com/behaviour.xyz/">@behaviour.xyz</a></li>
-            </ul>
-            <br>
-            <ul>
-              <li data-js-module="navigation" class="js-clock"><span>LONDON</span> <span class="js-clock-ldn">00:00:00</span></li>
-              <li data-js-module="navigation" class="js-clock"><span>SAN FRANCISCO</span> <span class="js-clock-sf">00:00:00</span></li>
-            </ul>
-            </p>
-          </div>
+        <!--Video definition for desktop		-->
+        <div class="project__video__wrapper z-998 fixed-center-video">
+          <div class="project__video__player js-player" data-plyr-provider="vimeo" data-plyr-embed-id="569758723"></div>
         </div>
-        <div class="col col-2">
-          <div class="prismic-content">
-            <p>Are you are looking to make a meaningful impact on the world? <a href="mailto:curious@behaviour.xyz">Let's talk</a></p>
-          </div>
-        </div>
-      </footer>
+        <!--Video definition only for mobile-->
+        <div class="project__video__player__mobile js-player-mobile" data-plyr-provider="vimeo" data-plyr-embed-id="569758723"></div>
+        </a></li>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h5>We build brands, design products and create customer experiences. We help startups establish, survive and thrive. We partner with existing brands and help them innovate, grow and understand the impact they can have on the world.</h5>
+      <br>
+      <br>
+      <br>
+      <br>
+      <li data-js-module="navigation" class="js-clock"><span>London.</span> <span class="js-clock-ldn">00:00:00</span></li>
+      <li data-js-module="navigation" class="js-clock"><span>San Francisco.</span> <span class="js-clock-sf">00:00:00</span></li>
+    </ul>
+    <div class="info--text">
+      <h5>BEHAVIOUR&reg; is a creative company based in London and San Francisco, innovating for the good of people and the planet.</h5>
+      <h5>We believe ideas can create radical change within a world running out of resources and time. Creativity can shift perceptions, and brands with purpose can transform our relationship to each other and the world, shifting our feelings about consumption and waste.</h5>
+      <h5>Doing better with less, making things with beauty and function, creating value from transparency and provenance. The future is more uncertain now than ever. Our duty is to inform, inspire and innovate.</h5>
+      <h5>We build partnerships of longevity and commitment, through dialogue, determination and consistent delivery.</h5>
+      <h5>What we do:</h5>
+      <h5>Think &ndash;<br>Research &amp; Insights<br>
+        Business Strategy<br>
+        Brand Strategy<br>
+        Purpose<br>
+        Positioning<br>
+        Personality<br>
+        Category Definition<br>
+        Naming &amp; Nomenclature<br>
+        Tagline Development<br>
+        Brand Narrative. </h5>
+      <h5>Make &ndash;<br>
+		Visual Identity<br>
+        Tone of Voice<br>
+        Image Direction<br>
+        Brand Systems<br>
+        Motion Design<br>
+        Campaign &amp; Content<br>
+        Product Design<br>
+        Packaging Systems<br>
+        UX &amp; UI<br>
+        Web &amp; App Design. </h5>
+      <h5>Are you are looking to make a meaningful impact on the world? Let’s talk.</h5>
+      <h5>Inquiries:<br/>
+        <a href="mailto:info@behaviour.xyz" target="blank">info@behaviour.xyz</a><br>
+        +1   (628) 946 1863<br>
+        +44 (0) 20 8106 1805</h5>
+      <h5> <a href="https://www.instagram.com/behaviour.xyz" target="blank">Instagram</a><br/>
+        <a href="https://www.linkedin.com/company/behaviour.xyz/" target="blank">LinkedIn</a><br/>
+        <a class="chaos" href="https://open.spotify.com/show/78GwRq1GV5xDyZW9KLI9hW?si=XOr6nTQoQbyEDp3_YyGgJg" target="blank">Spotify</a></h5>
+      <p>
+      <ul>
+        <li data-js-module="navigation" class="js-clock"><span>London.</span> <span class="js-clock-ldn">00:00:00</span></li>
+        <li data-js-module="navigation" class="js-clock"><span>San Francisco.</span> <span class="js-clock-sf">00:00:00</span></li>
+      </ul>
+      </p>
     </div>
-  </div>
+  </main>
 </div>
-<script src="main.af706cd42808cf38cd3a.js"></script>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="assets/js/vendor/main.af706cd42808cf38cd3a.js"> </script>
+<script src="https://cdn.plyr.io/3.3.7/plyr.js"> </script>
+<script src="assets/js/vendor/anime.min.js" async="async"></script>
+<script src="assets/js/vendor/jquery.hoverIntent.min.js" async="async"></script>
+<script src="assets/js/modules/load.js" async="async"></script>
+<script src="assets/js/modules/scripts.js" async="async"></script>
+<script src="assets/js/modules/chaos.js" async="async"></script>
+<script src="assets/js/modules/cursor.js" async="async"></script>
+<script src="assets/js/modules/info.js" async="async"></script>
+<script src="assets/js/modules/loader.js" async="async"></script>
+<script src="assets/js/modules/mobile-videos.js" async="async"></script>
+<script src="assets/js/modules/my-control-js.js" async="async"></script>
 </html>
