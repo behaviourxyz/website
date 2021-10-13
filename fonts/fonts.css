@@ -10,6 +10,7 @@
                  url('https://www.behaviour.xyz/fonts/FontName.ttf') format('truetype');
             font-style: normal;
             font-weight: 400;
+            font-feature-settings: "ss12";
         }
 
     Font Weights:
@@ -31,6 +32,3 @@
     font-style: normal;
     font-weight: 300;
 }
-
-
-.my-text { font-feature-settings: "ss12";}
