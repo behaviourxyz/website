@@ -31,3 +31,6 @@
     font-style: normal;
     font-weight: 300;
 }
+
+
+.my-text { font-feature-settings: "ss12";}
