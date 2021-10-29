@@ -6022,13 +6022,25 @@ video#bgvid-cover {
 }
 .page-template-page-splash-tpl .vertical-slogan-splash-2 {
   left: auto;
-  right: -10.25rem;
+  right: -9.25rem;
   margin: 0;
   bottom: auto;
   top: 14rem;
   line-height: 1;
   padding: 0;
   height: 1rem;
+}
+@media all and (max-width: 1300px) {
+.page-template-page-splash-tpl .vertical-slogan-splash-2 {
+  left: auto;
+  right: -10rem;
+}
+}
+@media all and (max-width: 600px) {
+.page-template-page-splash-tpl .vertical-slogan-splash-2 {
+  left: auto;
+  right: -10.25rem;
+}
 }
 .page-template-page-splash-tpl .splash-bkg {
   background: white;
