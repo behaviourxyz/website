@@ -470,7 +470,7 @@ button:focus {
   position: relative
 }
 .typo--arrowed:after {
-  content: ":)"
+  content: "\2192"
 }
 .typo--external {
   position: relative
@@ -1945,7 +1945,7 @@ body.body--indexLoaded .clocks, body.body--detail .clocks {
   }
 }
 .ticker__link:after {
-  content: ":)";
+  content: "\2192";
   vertical-align: middle;
   position: absolute;
   right: 0;
