@@ -1040,8 +1040,8 @@ body.body--dark #content, body.body--dark #footer, body.body--dark .header--ligh
 }
 .indexBar__button {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -10px;
+  top: 5px;
   bottom: 0;
   width: 70px;
   line-height: 70px;
@@ -1066,8 +1066,8 @@ body.body--dark #content, body.body--dark #footer, body.body--dark .header--ligh
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  top: 15px;
-  left: 9px;
+  top: 24px;
+  left: 5px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
 }
