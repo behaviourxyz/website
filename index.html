@@ -55,9 +55,15 @@
 <link href="build/css/application.min.2952e181.css" rel="stylesheet">
 <link href="build/css/cookiebanner.min.944f3aca.css" rel="stylesheet">
 
-<!-- Preload and Prefect post-CSS -->
-<link href="build/js/application.min.c665c82f.js" rel="preload" as="script">
-<link href="build/js/uploader.min.56474e45.js" rel="preload" as="script">
+<!-- Preload and Prefect post-CSS --> 
+<!--<link href="build/js/application.min.c665c82f.js" rel="preload" as="script">
+<link href="build/js/uploader.min.56474e45.js" rel="preload" as="script">--> 
+<script type="text/javascript">
+    window.onerror = function(message, url, lineNumber) {  
+        // code to execute on an error  
+        return true; // prevents browser error messages  
+    };
+</script>
 </head>
 <body id="body" class="body--home">
 <div class="redline" data-behavior="toggle_redline"></div>
@@ -226,7 +232,7 @@
 <div class="emailTicker" data-email-message>
   <p></p>
 </div>
-<script src="build/js/application.min.c665c82f.js"></script>
-<script src="build/js/uploader.min.56474e45.js"></script>	
+<script src="build/js/application.min.c665c82f.js"></script> 
+<script src="build/js/uploader.min.56474e45.js"></script>
 </body>
 </html>
