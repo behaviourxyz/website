@@ -57,7 +57,14 @@
 <link href="build/css/cookiebanner.min.944f3aca.css" rel="stylesheet">
 
 <!-- Preload and Prefect post-CSS -->
-<link href="build/js/application.min.c665c82f.js" rel="preload" as="script">
+<!--<link href="build/js/application.min.c665c82f.js" rel="preload" as="script">
+<link href="build/js/uploader.min.56474e45.js" rel="preload" as="script">-->
+<script type="text/javascript">
+    window.onerror = function(message, url, lineNumber) {  
+        // code to execute on an error  
+        return true; // prevents browser error messages  
+    };
+</script> 
 </head>
 <body id="body" class="body--contact">
 <div class="redline" data-behavior="toggle_redline"></div>
@@ -119,7 +126,7 @@
         <div class="content__text content__text--intro" data-behavior="slideshow_office">
           <div class="content__textCol content__textCol--contact">
             <p><b>New project</b><br />
-              <a href="contact/email.html" class="typo--bordered" data-behavior="show_panel" >Let’s collaborate</a></p>
+              <a href="email?subject=business&studio=san-francisco" class="typo--bordered" data-behavior="show_panel" >Let’s collaborate</a></p>
             <p><b>Press inquiry</b><br />
               <a href="contact/email.html" class="typo--bordered" data-behavior="show_panel" >Ask us anything</a></p>
           </div>
