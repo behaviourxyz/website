@@ -54,6 +54,16 @@
 <!-- CSS -->
 <link href="build/css/application.min.2952e181.css" rel="stylesheet">
 <link href="build/css/cookiebanner.min.944f3aca.css" rel="stylesheet">
+
+<!-- Preload and Prefect post-CSS --> 
+<!--<link href="build/js/application.min.c665c82f.js" rel="preload" as="script">
+<link href="build/js/uploader.min.56474e45.js" rel="preload" as="script">--> 
+<script type="text/javascript">
+    window.onerror = function(message, url, lineNumber) {  
+        // code to execute on an error  
+        return true; // prevents browser error messages  
+    };
+</script>
 </head>
 <body id="body" class="body--about">
 <div class="redline" data-behavior="toggle_redline"></div>
@@ -237,12 +247,12 @@
           <ol data-behavior="accordion">
             <li class="accordion__item"> <span class="typo--bordered typo--subtitle accordion__trigger" data-accordion-trigger><span class="accordion__num">01</span> Fee</span>
               <div class="accordion__content" data-accordion-content>
-                <p>The typical form of commercial relationship between partners where we are either ‘paid-for-time’ or agree a fixed price against a specific scope of work.</p>
+                <p>The typical form of commercial relationship between partners in which we are ‘paid-for-time’, having agreed a fixed price against a specific scope of work.</p>
               </div>
             </li>
             <li class="accordion__item"> <span class="typo--bordered typo--subtitle accordion__trigger" data-accordion-trigger><span class="accordion__num">02</span> Shared Revenue</span>
               <div class="accordion__content" data-accordion-content>
-                <p>Shaped around incentives, we offer models where we combine part standard fee structure with rewards based around the impact and results our work generates.</p>
+                <p>Shaped around incentives, we offer alternative models where payment is a combination of fixed fee, and, rewards based on the measurable impact and results that our work generates.</p>
               </div>
             </li>
             <li class="accordion__item"> <span class="typo--bordered typo--subtitle accordion__trigger" data-accordion-trigger><span class="accordion__num">03</span> Equity</span>
