@@ -4229,7 +4229,7 @@ body .index__item {
   padding-left: 25px;
   padding-right: 25px;
   text-align: center;
-  min-width: 265px
+  width: 100%
 }
 @media (max-width: 767px) {
   .button--large {
